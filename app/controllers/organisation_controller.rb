@@ -11,9 +11,9 @@ before_filter :authenticate_user!
 
   def show
      @organisation = Organisation.where(:id => params[:organisation_id])
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render :json => @organisation }
+     respond_to do |format|
+     format.html # index.html.erb
+     format.json { render :json => @organisation }
    end
 end
 
